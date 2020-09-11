@@ -2,7 +2,7 @@
   "expo": {
     "name": "Koreha",
     "slug": "Koreha",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -14,13 +14,15 @@
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
-      "**/*"
+      "assets/*"
     ],
     "ios": {
-      "supportsTablet": true
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "supportsTablet": true,
+      "bundleIdentifier": "Koreha",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Use the camera to upload images and perform image searches.",
+        "NSPhotoLibraryUsageDescription": "Use the photo library to upload images and perform image searches."
+      }
     }
   }
 }

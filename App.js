@@ -1,13 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { ImageSelect } from './ImageSelect';
+import * as SplashScreen from 'expo-splash-screen';
+export function preventAutoHide() {
+    if (SplashScreen.preventAutoHide) {
+        SplashScreen.preventAutoHide();
+    }
+}
+export function hide() {
+    if (SplashScreen.hide) {
+        SplashScreen.hide();
+    }
+}
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ScrollView contentContainerStyle={ styles.container }>
+      <ImageSelect />
+    </ScrollView>
   );
 }
 

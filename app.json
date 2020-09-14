@@ -20,8 +20,8 @@
       "supportsTablet": true,
       "bundleIdentifier": "Koreha",
       "infoPlist": {
-        "NSCameraUsageDescription": "Use the camera to upload images and perform image searches.",
-        "NSPhotoLibraryUsageDescription": "Use the photo library to upload images and perform image searches."
+        "NSCameraUsageDescription": "撮影する写真から画像検索を行うためにアクセス許可が必要です",
+        "NSPhotoLibraryUsageDescription": "フォトライブラリの写真から画像検索を行うためにアクセス許可が必要です"
       }
     }
   }
